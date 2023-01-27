@@ -1,0 +1,52 @@
+<!Doctype html>
+<html>
+    <style>
+        
+    </style>
+    <head>
+        <title>Enquiry Page</title>
+    </head>
+    <body>
+        <center>
+        <h1>Medical Insurance Prediction</h1>
+        <br>
+        <form action="http://127.0.0.1:5000/predict_charges" method="POST">
+             Name : 
+                <input type "text" placeholder = "Enter Your Name" name="name"> <br><br>
+                    Age:
+
+                        <input type "text" placeholder = "Enter Your Age" name='age'> <br><br>
+                        
+                       Sex:
+                         <input type = "radio" name = "sex" value="female">Female
+                        <input type = "radio" name="sex" value="male">Male 
+                        <br><br>
+                        BMI:
+                        
+                        <input type "text" placeholder = "Enter Your BMI Number" name="bmi"> <br><br>
+                        
+                        Children:
+                        
+                        <input type "text" placeholder = "Enter Your Children number" name="children"> <br><br>
+                        
+                        Smoker:
+                        <input type = "radio" name = "smoker" value="yes" >Yes
+                        <input type = "radio" name = "smoker" value="no">No
+                        <br><br>
+                        <label for="region">Region:  </label>
+
+                            <select name="region" id="region">
+                                <option value= "northeast"> Northeast </option>
+                                <option value= "northwest"> Northwest </option>
+                                <option value= "southeast"> Southeast </option>
+                                <option value= "southwest"> Southwest </option>
+                            </select>
+                        
+                        <br><br>
+                        <button type="Submit">Submit</button>
+                        
+                        
+        </form>
+        </center>
+    </body>
+</html>
